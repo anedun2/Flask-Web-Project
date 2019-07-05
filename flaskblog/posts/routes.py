@@ -4,9 +4,11 @@ from flask_login import current_user, login_required
 from flaskblog import db
 from flaskblog.models import Post
 from flaskblog.posts.forms import PostForm
+import logging
 
 posts = Blueprint('posts', __name__)
 
+logger = logging.getLogger('flaskblog')
 
 @posts.route("/post/new", methods=['GET', 'POST'])
 @login_required
@@ -17,6 +19,7 @@ def new_post():
         db.session.add(post)
         db.session.commit()
         flash('Your post has been created!', 'success')
+        logger.info('Post created')
         return redirect(url_for('main.home'))
     return render_template('create_post.html', title='New Post',
                            form=form, legend='New Post')
@@ -40,6 +43,7 @@ def update_post(post_id):
         post.content = form.content.data
         db.session.commit()
         flash('Your post has been updated!', 'success')
+        logger.info('Post updated')
         return redirect(url_for('posts.post', post_id=post.id))
     elif request.method == 'GET':
         form.title.data = post.title
@@ -57,4 +61,5 @@ def delete_post(post_id):
     db.session.delete(post)
     db.session.commit()
     flash('Your post has been deleted!', 'success')
+    logger.info('Post deleted')
     return redirect(url_for('main.home'))

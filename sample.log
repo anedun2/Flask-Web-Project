@@ -1,0 +1,21 @@
+2019-07-03 14:30:29,532 - flaskblog - INFO - Home page
+2019-07-03 14:30:42,253 - flaskblog - INFO - Account created! - redirect to login
+2019-07-03 14:30:50,073 - flaskblog - INFO - Home page
+2019-07-03 14:30:59,564 - flaskblog - INFO - Post created
+2019-07-03 14:30:59,572 - flaskblog - INFO - Home page
+2019-07-03 14:31:04,476 - flaskblog - INFO - author filter
+2019-07-03 14:31:12,446 - flaskblog - INFO - About page
+2019-07-03 14:31:13,093 - flaskblog - INFO - Home page
+2019-07-03 14:31:14,046 - flaskblog - INFO - Home page
+2019-07-03 14:31:18,927 - flaskblog - ERROR - 404: page not found
+2019-07-03 14:31:20,485 - flaskblog - INFO - Home page
+2019-07-03 14:31:26,687 - flaskblog - INFO - author filter
+2019-07-03 14:31:28,163 - flaskblog - INFO - author filter
+2019-07-03 14:31:33,050 - flaskblog - INFO - Post deleted
+2019-07-03 14:31:33,058 - flaskblog - INFO - Home page
+2019-07-03 14:31:49,377 - flaskblog - INFO - Account upadted!
+2019-07-04 10:00:43,713 - flaskblog - INFO - Home page
+2019-07-04 10:00:47,337 - flaskblog - INFO - Home page
+2019-07-04 10:00:48,427 - flaskblog - INFO - About page
+2019-07-04 10:00:49,716 - flaskblog - INFO - Home page
+2019-07-04 10:00:56,706 - flaskblog - ERROR - 404: page not found
